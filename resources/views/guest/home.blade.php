@@ -7,6 +7,9 @@
     <title>Test Front-Office</title>
 </head>
 <body>
-    test
+    <div id="app">
+
+    </div>
+    <script src="{{asset("js/front.js")}}"></script>
 </body>
 </html>
