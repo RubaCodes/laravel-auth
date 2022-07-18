@@ -8,7 +8,7 @@
     <title>Test Front-Office</title>
 </head>
 <body>
-    <div id="app">
+    <div id="root">
 
     </div>
     <script src="{{asset("js/front.js")}}"></script>

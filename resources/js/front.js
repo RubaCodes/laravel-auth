@@ -1,8 +1,9 @@
+//richiedi bootstrap
 window.Vue = require("vue");
-
-import App from "./components/";
-
+//importa il componente App ,speciaele , in una cartella a parte, il resto e' su components
+import App from "./views/App";
+//mount e render dell'app di vue
 const app = new Vue({
-    el: "#app",
-    render: (h) => h(app),
+    el: "#root",
+    render: (h) => h(App),
 });
