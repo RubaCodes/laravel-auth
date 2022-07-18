@@ -11,4 +11,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+div {
+    text-align: center;
+    background-color: lightblue;
+}
+</style>
