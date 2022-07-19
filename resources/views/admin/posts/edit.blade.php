@@ -6,7 +6,7 @@
     <div class="card">
         <div class="card-header text-uppercase ">Modifica Post</div>
         <div class="card-body">
-            <form action="{{route('admin.posts.update')}}" method="POST">
+            <form action="{{route('admin.posts.update', $post)}}" method="POST">
                 @csrf
                 @method('PUT')
                 <div class="form-group">
@@ -25,7 +25,7 @@
                     ? 'checked' : "" }}>
                     <label class="form-check-label" for="published">Pubblico</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Crea post</button>
+                <button type="submit" class="btn btn-primary">Modifica post</button>
             </form>
         </div>
     </div>
