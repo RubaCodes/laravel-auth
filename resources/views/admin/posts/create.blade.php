@@ -10,14 +10,16 @@
                 @csrf
                 <div class="form-group">
                     <label for="title">Titolo del post</label>
-                    <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp"
+                        value="{{old('title')}}">
                 </div>
 
                 <label for="content">Inserisci il contenuto del post</label>
-                <textarea class="form-control" id="content" name="content" rows="7"></textarea>
+                <textarea class="form-control" id="content" name="content" rows="7">{{old('content')}}</textarea>
 
                 <div class="form-group form-check pt-4">
-                    <input type="checkbox" name="published" class="form-check-input" id="published">
+                    <input type="checkbox" name="published" class="form-check-input" id="published" {{old('published')
+                        ? 'checked' : "" }}>
                     <label class="form-check-label" for="published">Pubblico</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Crea post</button>
